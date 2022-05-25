@@ -1,0 +1,36 @@
+V3 19
+FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/binBCD14.vhd" 2017/05/30.21:27:31 P.58f
+EN work/binBCD14 1498430945 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/binBCD14.vhd" \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/binBCD14/Behavioral 1498430946 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/binBCD14.vhd" \
+      EN work/binBCD14 1498430945
+FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/clkdiv.vhd" 2017/06/25.21:08:43 P.58f
+EN work/clkdiv 1498430941 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/clkdiv.vhd" \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/clkdiv/Behavioral 1498430942 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/clkdiv.vhd" \
+      EN work/clkdiv 1498430941
+FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.vhd" 2017/06/25.20:35:24 P.58f
+EN work/percobaan 1498430943 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.vhd" \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/percobaan/Behavioral 1498430944 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.vhd" \
+      EN work/percobaan 1498430943
+FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.vhd" 2017/06/25.21:06:21 P.58f
+EN work/PertaMini_TOP 1498430949 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.vhd" \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/PertaMini_TOP/Behavioral 1498430950 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.vhd" \
+      EN work/PertaMini_TOP 1498430949 CP clkdiv CP percobaan CP binBCD14 CP x7segbc
+FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/x7segbc.vhd" 2017/06/13.10:20:54 P.58f
+EN work/x7segbc 1498430947 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/x7segbc.vhd" \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/x7segbc/Behavioral 1498430948 \
+      FL "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/x7segbc.vhd" \
+      EN work/x7segbc 1498430947

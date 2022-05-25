@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Febby Ronaldo\Documents\Rangkaian Logika 2\VHDL data\Postest2\PertaMini_TOP.ncd
+OUTFILE=C:\Users\Febby Ronaldo\Documents\Rangkaian Logika 2\VHDL data\Postest2\PertaMini_TOP.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\Febby Ronaldo\Documents\Rangkaian Logika 2\VHDL data\Postest2
+LICENSE=WebPack
+USER_INFO=__0_0_0

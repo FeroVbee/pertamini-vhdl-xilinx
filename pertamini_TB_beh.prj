@@ -1,0 +1,6 @@
+vhdl work "x7segbc.vhd"
+vhdl work "percobaan.vhd"
+vhdl work "clkdiv.vhd"
+vhdl work "binBCD14.vhd"
+vhdl work "PertaMini_TOP.vhd"
+vhdl work "pertamini_TB.vhd"

@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "percobaan.ngc" percobaan.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o percobaan_map.ncd percobaan.ngd percobaan.pcf 
+par -w -intstyle ise -ol high -t 1 percobaan_map.ncd percobaan.ncd percobaan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml percobaan.twx percobaan.ncd -o percobaan.twr percobaan.pcf 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "percobaan.ngc" percobaan.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o percobaan_map.ncd percobaan.ngd percobaan.pcf 
+par -w -intstyle ise -ol high -t 1 percobaan_map.ncd percobaan.ncd percobaan.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml percobaan.twx percobaan.ncd -o percobaan.twr percobaan.pcf 
+bitgen -intstyle ise -f percobaan.ut percobaan.ncd 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.syr" 

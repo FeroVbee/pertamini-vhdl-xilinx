@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "PertaMini_TOP.ngc" PertaMini_TOP.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o PertaMini_TOP_map.ncd PertaMini_TOP.ngd PertaMini_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 PertaMini_TOP_map.ncd PertaMini_TOP.ncd PertaMini_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PertaMini_TOP.twx PertaMini_TOP.ncd -o PertaMini_TOP.twr PertaMini_TOP.pcf 
+bitgen -intstyle ise -f PertaMini_TOP.ut PertaMini_TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "PertaMini_TOP.ngc" PertaMini_TOP.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o PertaMini_TOP_map.ncd PertaMini_TOP.ngd PertaMini_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 PertaMini_TOP_map.ncd PertaMini_TOP.ncd PertaMini_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PertaMini_TOP.twx PertaMini_TOP.ncd -o PertaMini_TOP.twr PertaMini_TOP.pcf 
+bitgen -intstyle ise -f PertaMini_TOP.ut PertaMini_TOP.ncd 
+xst -intstyle ise -ifn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.xst" -ofn "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PertaMini_PIN.ucf -p xc3s200-ft256-4 "PertaMini_TOP.ngc" PertaMini_TOP.ngd  
+map -intstyle ise -p xc3s200-ft256-4 -cm area -ir off -pr off -c 100 -o PertaMini_TOP_map.ncd PertaMini_TOP.ngd PertaMini_TOP.pcf 
+par -w -intstyle ise -ol high -t 1 PertaMini_TOP_map.ncd PertaMini_TOP.ncd PertaMini_TOP.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PertaMini_TOP.twx PertaMini_TOP.ncd -o PertaMini_TOP.twr PertaMini_TOP.pcf -ucf PertaMini_PIN.ucf 
+bitgen -intstyle ise -f PertaMini_TOP.ut PertaMini_TOP.ncd 

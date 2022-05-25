@@ -1,0 +1,21 @@
+NET "Clr" LOC=M13;
+NET "Start" LOC=M14;
+NET "BTN[0]" LOC=L13;
+NET "BTN[1]" LOC=L14;
+
+NET "A_to_G[0]" LOC=N16;
+NET "A_to_G[1]" LOC=F13;
+NET "A_to_G[2]" LOC=R16;
+NET "A_to_G[3]" LOC=P15;
+NET "A_to_G[4]" LOC=N15;
+NET "A_to_G[5]" LOC=G13;
+NET "A_to_G[6]" LOC=E14;
+
+NET "An[0]" LOC=D14;
+NET "An[1]" LOC=G14;
+NET "An[2]" LOC=F14;
+NET "An[3]" LOC=E13;
+
+NET "Dotp" LOC=P16;
+
+NET "LED" LOC=K12;

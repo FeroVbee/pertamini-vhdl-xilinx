@@ -1,0 +1,6 @@
+vhdl isim_temp "x7segbc.vhd"
+vhdl isim_temp "percobaan.vhd"
+vhdl isim_temp "clkdiv.vhd"
+vhdl isim_temp "binBCD14.vhd"
+vhdl isim_temp "PertaMini_TOP.vhd"
+vhdl isim_temp "pertamini_TB.vhd"

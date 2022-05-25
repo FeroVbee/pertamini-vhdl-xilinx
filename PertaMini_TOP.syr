@@ -1,0 +1,705 @@
+Release 14.5 - xst P.58f (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.65 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.65 secs
+ 
+--> Reading design: PertaMini_TOP.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PertaMini_TOP.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PertaMini_TOP"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : PertaMini_TOP
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/clkdiv.vhd" in Library work.
+Architecture behavioral of Entity clkdiv is up to date.
+Compiling vhdl file "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.vhd" in Library work.
+Architecture behavioral of Entity percobaan is up to date.
+Compiling vhdl file "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/binBCD14.vhd" in Library work.
+Architecture behavioral of Entity binbcd14 is up to date.
+Compiling vhdl file "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/x7segbc.vhd" in Library work.
+Architecture behavioral of Entity x7segbc is up to date.
+Compiling vhdl file "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.vhd" in Library work.
+Architecture behavioral of Entity pertamini_top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <PertaMini_TOP> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clkdiv> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <percobaan> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <binBCD14> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <x7segbc> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <PertaMini_TOP> in library <work> (Architecture <behavioral>).
+Entity <PertaMini_TOP> analyzed. Unit <PertaMini_TOP> generated.
+
+Analyzing Entity <clkdiv> in library <work> (Architecture <behavioral>).
+Entity <clkdiv> analyzed. Unit <clkdiv> generated.
+
+Analyzing Entity <percobaan> in library <work> (Architecture <behavioral>).
+Entity <percobaan> analyzed. Unit <percobaan> generated.
+
+Analyzing Entity <binBCD14> in library <work> (Architecture <behavioral>).
+Entity <binBCD14> analyzed. Unit <binBCD14> generated.
+
+Analyzing Entity <x7segbc> in library <work> (Architecture <behavioral>).
+Entity <x7segbc> analyzed. Unit <x7segbc> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/clkdiv.vhd".
+    Found 24-bit up counter for signal <q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <clkdiv> synthesized.
+
+
+Synthesizing Unit <percobaan>.
+    Related source file is "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/percobaan.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | clr                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit register for signal <digit>.
+    Found 1-bit register for signal <led1>.
+    Found 14-bit up counter for signal <count>.
+    Found 14-bit comparator not equal for signal <count$cmp_ne0000> created at line 48.
+    Found 5-bit up counter for signal <delay>.
+    Found 1-bit register for signal <flag>.
+    Found 1-bit register for signal <lastbtn>.
+    Found 1-bit register for signal <led>.
+    Found 5-bit comparator lessequal for signal <led$cmp_le0000> created at line 57.
+    Found 14-bit register for signal <maxsel>.
+    Found 14-bit comparator greater for signal <maxsel$cmp_gt0000> created at line 43.
+    Found 14-bit adder for signal <maxsel$share0000> created at line 34.
+    Found 14-bit comparator equal for signal <state$cmp_eq0000> created at line 48.
+    Found 5-bit comparator greater for signal <state$cmp_gt0000> created at line 57.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 Comparator(s).
+Unit <percobaan> synthesized.
+
+
+Synthesizing Unit <binBCD14>.
+    Related source file is "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/binBCD14.vhd".
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0000> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0001> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0002> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0003> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0004> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0005> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0006> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0007> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0008> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0009> created at line 21.
+    Found 5-bit comparator greater for signal <z_17$cmp_gt0010> created at line 21.
+    Found 4-bit adder for signal <z_17_14$add0000> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0001> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0002> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0003> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0004> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0005> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0006> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0007> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0008> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0009> created at line 22.
+    Found 4-bit adder for signal <z_17_14$add0010> created at line 22.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0000> created at line 24.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0001> created at line 24.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0002> created at line 24.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0003> created at line 24.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0004> created at line 24.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0005> created at line 24.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0006> created at line 24.
+    Found 5-bit comparator greater for signal <z_19$cmp_gt0007> created at line 24.
+    Found 4-bit adder for signal <z_21_18$add0000> created at line 25.
+    Found 4-bit adder for signal <z_21_18$add0001> created at line 25.
+    Found 4-bit adder for signal <z_21_18$add0002> created at line 25.
+    Found 4-bit adder for signal <z_21_18$add0003> created at line 25.
+    Found 4-bit adder for signal <z_21_18$add0004> created at line 25.
+    Found 4-bit adder for signal <z_21_18$add0005> created at line 25.
+    Found 4-bit adder for signal <z_21_18$add0006> created at line 25.
+    Found 4-bit adder for signal <z_21_18$add0007> created at line 25.
+    Found 5-bit comparator greater for signal <z_25$cmp_gt0000> created at line 27.
+    Found 5-bit comparator greater for signal <z_25$cmp_gt0001> created at line 27.
+    Found 5-bit comparator greater for signal <z_25$cmp_gt0002> created at line 27.
+    Found 5-bit comparator greater for signal <z_25$cmp_gt0003> created at line 27.
+    Found 5-bit comparator greater for signal <z_25$cmp_gt0004> created at line 27.
+    Found 4-bit adder for signal <z_25_22$add0000> created at line 28.
+    Found 4-bit adder for signal <z_25_22$add0001> created at line 28.
+    Found 4-bit adder for signal <z_25_22$add0002> created at line 28.
+    Found 4-bit adder for signal <z_25_22$add0003> created at line 28.
+    Found 4-bit adder for signal <z_25_22$add0004> created at line 28.
+    Found 5-bit comparator greater for signal <z_26$cmp_gt0000> created at line 30.
+    Found 5-bit comparator greater for signal <z_26$cmp_gt0001> created at line 30.
+    Found 4-bit adder for signal <z_29_26$add0000> created at line 31.
+    Found 4-bit adder for signal <z_29_26$add0001> created at line 31.
+    Summary:
+	inferred  26 Adder/Subtractor(s).
+	inferred  26 Comparator(s).
+Unit <binBCD14> synthesized.
+
+
+Synthesizing Unit <x7segbc>.
+    Related source file is "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/x7segbc.vhd".
+    Found 16x7-bit ROM for signal <a_to_g>.
+    Found 1-bit 4-to-1 multiplexer for signal <aen$mux0000> created at line 68.
+    Found 2-bit up counter for signal <clockdiv>.
+    Found 4-bit 4-to-1 multiplexer for signal <digit>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   5 Multiplexer(s).
+Unit <x7segbc> synthesized.
+
+
+Synthesizing Unit <PertaMini_TOP>.
+    Related source file is "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/PertaMini_TOP.vhd".
+Unit <PertaMini_TOP> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 27
+ 14-bit adder                                          : 1
+ 4-bit adder                                           : 26
+# Counters                                             : 4
+ 14-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 24-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 14-bit register                                       : 2
+# Comparators                                          : 31
+ 14-bit comparator equal                               : 1
+ 14-bit comparator greater                             : 1
+ 14-bit comparator not equal                           : 1
+ 5-bit comparator greater                              : 27
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Q2/state/FSM> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00
+ s1    | 01
+ s2    | 10
+ s3    | 11
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 27
+ 14-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 24
+# Counters                                             : 4
+ 14-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 24-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Comparators                                          : 31
+ 14-bit comparator equal                               : 1
+ 14-bit comparator greater                             : 1
+ 14-bit comparator not equal                           : 1
+ 5-bit comparator greater                              : 27
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Q1/q_19> of sequential type is unconnected in block <PertaMini_TOP>.
+WARNING:Xst:2677 - Node <Q1/q_20> of sequential type is unconnected in block <PertaMini_TOP>.
+WARNING:Xst:2677 - Node <Q1/q_21> of sequential type is unconnected in block <PertaMini_TOP>.
+WARNING:Xst:2677 - Node <Q1/q_22> of sequential type is unconnected in block <PertaMini_TOP>.
+WARNING:Xst:2677 - Node <Q1/q_23> of sequential type is unconnected in block <PertaMini_TOP>.
+
+Optimizing unit <PertaMini_TOP> ...
+
+Optimizing unit <percobaan> ...
+
+Optimizing unit <binBCD14> ...
+
+Optimizing unit <x7segbc> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PertaMini_TOP, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PertaMini_TOP.ngr
+Top Level Output File Name         : PertaMini_TOP
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 373
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 29
+#      LUT2                        : 6
+#      LUT2_D                      : 1
+#      LUT3                        : 63
+#      LUT4                        : 140
+#      LUT4_D                      : 3
+#      MUXCY                       : 51
+#      MUXF5                       : 26
+#      VCC                         : 1
+#      XORCY                       : 47
+# FlipFlops/Latches                : 74
+#      FDC                         : 37
+#      FDE                         : 37
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 4
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      140  out of   1920     7%  
+ Number of Slice Flip Flops:             74  out of   3840     1%  
+ Number of 4 input LUTs:                247  out of   3840     6%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    173    10%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Mclock                             | BUFGP                  | 19    |
+Q1/q_181                           | BUFG                   | 53    |
+Q1/q_17                            | NONE(Q4/clockdiv_1)    | 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Clr                                | IBUF                   | 37    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.348ns (Maximum Frequency: 119.789MHz)
+   Minimum input arrival time before clock: 6.551ns
+   Maximum output required time after clock: 44.024ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Mclock'
+  Clock period: 5.042ns (frequency: 198.334MHz)
+  Total number of paths / destination ports: 190 / 19
+-------------------------------------------------------------------------
+Delay:               5.042ns (Levels of Logic = 19)
+  Source:            Q1/q_1 (FF)
+  Destination:       Q1/q_18 (FF)
+  Source Clock:      Mclock rising
+  Destination Clock: Mclock rising
+
+  Data Path: Q1/q_1 to Q1/q_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.720   1.140  Q1/q_1 (Q1/q_1)
+     LUT1:I0->O            1   0.551   0.000  Q1/Mcount_q_cy<1>_rt (Q1/Mcount_q_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  Q1/Mcount_q_cy<1> (Q1/Mcount_q_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<2> (Q1/Mcount_q_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<3> (Q1/Mcount_q_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<4> (Q1/Mcount_q_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<5> (Q1/Mcount_q_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<6> (Q1/Mcount_q_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<7> (Q1/Mcount_q_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<8> (Q1/Mcount_q_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<9> (Q1/Mcount_q_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<10> (Q1/Mcount_q_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<11> (Q1/Mcount_q_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<12> (Q1/Mcount_q_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<13> (Q1/Mcount_q_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<14> (Q1/Mcount_q_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<15> (Q1/Mcount_q_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Q1/Mcount_q_cy<16> (Q1/Mcount_q_cy<16>)
+     MUXCY:CI->O           0   0.064   0.000  Q1/Mcount_q_cy<17> (Q1/Mcount_q_cy<17>)
+     XORCY:CI->O           1   0.904   0.000  Q1/Mcount_q_xor<18> (Result<18>)
+     FDC:D                     0.203          Q1/q_18
+    ----------------------------------------
+    Total                      5.042ns (3.902ns logic, 1.140ns route)
+                                       (77.4% logic, 22.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Q1/q_181'
+  Clock period: 8.348ns (frequency: 119.789MHz)
+  Total number of paths / destination ports: 4509 / 74
+-------------------------------------------------------------------------
+Delay:               8.348ns (Levels of Logic = 23)
+  Source:            Q2/count_0 (FF)
+  Destination:       Q2/count_13 (FF)
+  Source Clock:      Q1/q_181 rising
+  Destination Clock: Q1/q_181 rising
+
+  Data Path: Q2/count_0 to Q2/count_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.720   1.246  Q2/count_0 (Q2/count_0)
+     LUT4:I0->O            1   0.551   0.000  Q2/Mcompar_state_cmp_eq0000_lut<0> (Q2/Mcompar_state_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  Q2/Mcompar_state_cmp_eq0000_cy<0> (Q2/Mcompar_state_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcompar_state_cmp_eq0000_cy<1> (Q2/Mcompar_state_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcompar_state_cmp_eq0000_cy<2> (Q2/Mcompar_state_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcompar_state_cmp_eq0000_cy<3> (Q2/Mcompar_state_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcompar_state_cmp_eq0000_cy<4> (Q2/Mcompar_state_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcompar_state_cmp_eq0000_cy<5> (Q2/Mcompar_state_cmp_eq0000_cy<5>)
+     MUXCY:CI->O          18   0.303   1.417  Q2/Mcompar_state_cmp_eq0000_cy<6> (Q2/Mcompar_state_cmp_eq0000_cy<6>)
+     INV:I->O              1   0.551   0.801  Q2/state_cmp_eq0000_inv1_INV_0 (Q2/state_cmp_eq0000_inv)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<0> (Q2/Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<1> (Q2/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<2> (Q2/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<3> (Q2/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<4> (Q2/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<5> (Q2/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<6> (Q2/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<7> (Q2/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<8> (Q2/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<9> (Q2/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<10> (Q2/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Q2/Mcount_count_cy<11> (Q2/Mcount_count_cy<11>)
+     MUXCY:CI->O           0   0.064   0.000  Q2/Mcount_count_cy<12> (Q2/Mcount_count_cy<12>)
+     XORCY:CI->O           1   0.904   0.000  Q2/Mcount_count_xor<13> (Q2/Mcount_count13)
+     FDE:D                     0.203          Q2/count_13
+    ----------------------------------------
+    Total                      8.348ns (4.884ns logic, 3.464ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Q1/q_17'
+  Clock period: 3.462ns (frequency: 288.850MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               3.462ns (Levels of Logic = 1)
+  Source:            Q4/clockdiv_0 (FF)
+  Destination:       Q4/clockdiv_0 (FF)
+  Source Clock:      Q1/q_17 rising
+  Destination Clock: Q1/q_17 rising
+
+  Data Path: Q4/clockdiv_0 to Q4/clockdiv_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.187  Q4/clockdiv_0 (Q4/clockdiv_0)
+     INV:I->O              1   0.551   0.801  Q4/Mcount_clockdiv_xor<0>11_INV_0 (Q4/Result<0>)
+     FDC:D                     0.203          Q4/clockdiv_0
+    ----------------------------------------
+    Total                      3.462ns (1.474ns logic, 1.988ns route)
+                                       (42.6% logic, 57.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Q1/q_181'
+  Total number of paths / destination ports: 141 / 55
+-------------------------------------------------------------------------
+Offset:              6.551ns (Levels of Logic = 5)
+  Source:            BTN<0> (PAD)
+  Destination:       Q2/maxsel_7 (FF)
+  Destination Clock: Q1/q_181 rising
+
+  Data Path: BTN<0> to Q2/maxsel_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.821   1.261  BTN_0_IBUF (BTN_0_IBUF)
+     LUT2:I1->O            3   0.551   0.975  Q2/state_FSM_FFd2-In3_SW0 (N3)
+     LUT3:I2->O            1   0.551   0.000  Q2/maxsel_mux0000<0>132_F (N97)
+     MUXF5:I0->O           8   0.360   1.278  Q2/maxsel_mux0000<0>132 (Q2/N01)
+     LUT4:I1->O            1   0.551   0.000  Q2/maxsel_mux0000<0>1 (Q2/maxsel_mux0000<0>)
+     FDC:D                     0.203          Q2/maxsel_0
+    ----------------------------------------
+    Total                      6.551ns (3.037ns logic, 3.514ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Q1/q_181'
+  Total number of paths / destination ports: 34807676 / 11
+-------------------------------------------------------------------------
+Offset:              44.024ns (Levels of Logic = 25)
+  Source:            Q2/digit_11 (FF)
+  Destination:       A_to_G<5> (PAD)
+  Source Clock:      Q1/q_181 rising
+
+  Data Path: Q2/digit_11 to A_to_G<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             11   0.720   1.483  Q2/digit_11 (Q2/digit_11)
+     LUT4:I0->O            7   0.551   1.261  Q3/z_17_mux00011 (Q3/z_17_mux0001)
+     LUT4:I1->O            9   0.551   1.192  Q3/z_17_mux000211 (Q3/N30)
+     LUT3:I2->O            4   0.551   1.256  Q3/z_15_mux000311 (Q3/N14)
+     LUT3:I0->O            3   0.551   1.246  Q3/z_17_mux000311 (Q3/N311)
+     LUT4:I0->O            2   0.551   1.216  Q3/Madd_z_21_18_add0001_cy<1>11 (Q3/Madd_z_21_18_add0001_cy<1>)
+     LUT3:I0->O            1   0.551   0.000  Q3/z_21_mux000136_G (N102)
+     MUXF5:I1->O           6   0.360   1.342  Q3/z_21_mux000136 (Q3/z_21_mux0001)
+     LUT3:I0->O            4   0.551   1.256  Q3/z_19_mux000211 (Q3/N7)
+     LUT4:I0->O            4   0.551   0.985  Q3/z_19_mux00021 (Q3/Madd_z_21_18_add0003_lut<2>)
+     LUT3:I2->O            3   0.551   1.246  Q3/z_21_mux000311 (Q3/N40)
+     LUT4:I0->O            2   0.551   0.903  Q3/Madd_z_25_22_add0001_cy<1>11 (Q3/Madd_z_25_22_add0001_cy<1>)
+     LUT4:I3->O            6   0.551   1.071  Q3/z_25_mux0001 (Q3/z_25_mux0001)
+     LUT3:I2->O            1   0.551   0.996  Q3/z_23_mux000121 (Q3/N61)
+     LUT4:I1->O            4   0.551   0.985  Q3/z_23_mux00011 (Q3/Madd_z_25_22_add0002_lut<2>)
+     LUT4:I2->O            4   0.551   1.256  Q3/z_23_mux000311 (Q3/N3)
+     LUT3:I0->O            6   0.551   1.342  Q3/z_25_mux000311 (Q3/N28)
+     LUT4:I0->O            1   0.551   0.000  Q3/Madd_z_29_26_add0001_Madd_cy<1>111 (Q3/Madd_z_29_26_add0001_Madd_cy<1>11)
+     MUXF5:I1->O           2   0.360   0.945  Q3/Madd_z_29_26_add0001_Madd_cy<1>11_f5 (Q3/Madd_z_29_26_add0001_Madd_cy<1>)
+     LUT4:I2->O            4   0.551   0.985  Q3/z_26_cmp_gt00011 (Q3/z_26_cmp_gt0001)
+     LUT3:I2->O            1   0.551   0.996  Q3/z_27_mux000121 (Q3/N51)
+     LUT4:I1->O            4   0.551   0.985  Q3/z_27_mux00011 (R<14>)
+     LUT3:I2->O            1   0.551   0.000  Q4/Mmux_digit_32 (Q4/Mmux_digit_32)
+     MUXF5:I1->O           7   0.360   1.261  Q4/Mmux_digit_2_f5_1 (Q4/digit<2>)
+     LUT4:I1->O            1   0.551   0.801  Q4/Mrom_a_to_g51 (A_to_G_5_OBUF)
+     OBUF:I->O                 5.644          A_to_G_5_OBUF (A_to_G<5>)
+    ----------------------------------------
+    Total                     44.024ns (19.015ns logic, 25.009ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Q1/q_17'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              11.558ns (Levels of Logic = 4)
+  Source:            Q4/clockdiv_0 (FF)
+  Destination:       A_to_G<6> (PAD)
+  Source Clock:      Q1/q_17 rising
+
+  Data Path: Q4/clockdiv_0 to A_to_G<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.720   1.526  Q4/clockdiv_0 (Q4/clockdiv_0)
+     LUT3:I0->O            1   0.551   0.000  Q4/Mmux_digit_3 (Q4/Mmux_digit_3)
+     MUXF5:I1->O           7   0.360   1.405  Q4/Mmux_digit_2_f5 (Q4/digit<0>)
+     LUT4:I0->O            1   0.551   0.801  Q4/Mrom_a_to_g51 (A_to_G_5_OBUF)
+     OBUF:I->O                 5.644          A_to_G_5_OBUF (A_to_G<5>)
+    ----------------------------------------
+    Total                     11.558ns (7.826ns logic, 3.732ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 38.00 secs
+Total CPU time to Xst completion: 37.25 secs
+ 
+--> 
+
+Total memory usage is 236932 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/pertamini_TB_isim_beh.exe" -prj "C:/Users/Febby Ronaldo/Documents/Rangkaian Logika 2/VHDL data/Postest2/pertamini_TB_beh.prj" "work.pertamini_TB" 
